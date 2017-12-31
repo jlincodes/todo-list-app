@@ -1,16 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Todo extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>Todos App</h1>
-      </div>
-    );
-  }
-}
+import configureStore from './store/store';
+
+// for testing:
+// import { receiveAllTodos, receiveTodo } from './actions/todo_actions';
+// import App from './components/app';
+
+import Root from './components/root';
 
 document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(<Todo />, document.getElementById('main'));
+  const store = configureStore();
+  const main = document.getElementById('main');
+
+  // for testing
+  // window.store = store;
+  // window.receiveAllTodos = receiveAllTodos;
+  // window.receiveTodo = receiveTodo;
+  // ReactDOM.render(<App />, main);
+
+  ReactDOM.render(<Root store={store}/>, main);
 });
