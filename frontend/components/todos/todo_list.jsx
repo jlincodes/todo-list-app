@@ -1,6 +1,7 @@
 import React from 'react';
 
 import TodoListItem from './todo_list_item';
+import TodoForm from './todo_form';
 
 export default class TodoList extends React.Component {
   render() {
@@ -14,6 +15,7 @@ export default class TodoList extends React.Component {
 
     return (
       <div>
+        <TodoForm />
         <ul>
           {todoItems}
         </ul>
