@@ -2,6 +2,7 @@ body {
   font-family: 'Acme', sans-serif;
   display: flex;
   justify-content: space-around;
+  background-color: rgb(155, 192, 255);
 }
 
 .todo-form {
@@ -9,7 +10,6 @@ body {
   flex-direction: column;
   align-items: center;
   width: 300px;
-  border: 1px solid black;
 }
 
 form {
@@ -41,4 +41,15 @@ button:hover {
   background-color: blue;
   color: white;
   border-radius: 5px;
+}
+
+
+.todo-task {
+  list-style: none;
+  background-color: white;
+  border: 1px solid lightblue;
+  border-radius: 5px;
+  width: 400px;
+  padding: 10px;
+  margin: 10px;
 }
