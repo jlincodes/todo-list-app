@@ -15,8 +15,9 @@ export default class TodoList extends React.Component {
 
     return (
       <div>
-        <TodoForm />
-        <ul>
+        <TodoForm receiveTodo={ receiveTodo }/>
+        <h2>Todos:</h2>
+        <ul className='todo-list'>
           {todoItems}
         </ul>
       </div>
