@@ -41,7 +41,9 @@ export default class TodoListItem extends React.Component {
           <h3>
             <a onClick={ this.toggleDetail }>{ title }</a>
           </h3>
-          <button className={ done ? 'Undo' : 'Done'} onClick={ this.toggleTodo }>
+          <button
+            className={ done ? 'undo' : 'done'}
+            onClick={ this.toggleTodo }>
             { done ? 'Undo' : 'Done'}
           </button>
         </div>
