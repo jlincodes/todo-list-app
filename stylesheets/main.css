@@ -32,6 +32,7 @@ button {
   font-size: 14px;
   background-color: lightblue;
   width: 125px;
+  height: 30px;
   margin: 10px;
   border-radius: 5px;
 }
@@ -43,8 +44,7 @@ button:hover {
   border-radius: 5px;
 }
 
-
-.todo-task {
+.todo-li {
   list-style: none;
   background-color: white;
   border: 1px solid lightblue;
@@ -52,4 +52,14 @@ button:hover {
   width: 400px;
   padding: 10px;
   margin: 10px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.todo-item a:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
