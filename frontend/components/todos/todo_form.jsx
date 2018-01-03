@@ -30,26 +30,24 @@ export default class TodoForm extends React.Component {
 
   render() {
     return (
-      <div className='todo-form'>
+      <form className='todo-form' onSubmit={this.handleSubmit}>
         <h2>Create a New Todo Task:</h2>
-        <form onSubmit={this.handleSubmit}>
-          <input
-            value={this.state.title}
-            placeholder='Task Title (ex. feed cat)'
-            onChange={this.update('title')}
-            required />
+        <input
+          value={this.state.title}
+          placeholder='Task Title (ex. feed cat)'
+          onChange={this.update('title')}
+          required />
 
-          <textarea
-            rows='10'
-            cols='40'
-            value={this.state.body}
-            placeholder='Task Details (ex.organic cat food only!)'
-            onChange={this.update('body')}
-            required></textarea>
+        <textarea
+          rows='10'
+          cols='40'
+          value={this.state.body}
+          placeholder='Task Details (ex.organic cat food only!)'
+          onChange={this.update('body')}
+          required></textarea>
 
-          <button className='create-button'>Create task</button>
-        </form>
-      </div>
+        <button className='create-button'>Create task</button>
+      </form>
     );
   }
 }

@@ -4,9 +4,12 @@ export default class TodoDetailView extends React.Component {
   render() {
     const {todo, removeTodo } = this.props;
     return (
-      <div>
+      <div className='todo-detail'>
+        <h4>Details:</h4>
         <p>{ todo.body }</p>
-        <button onClick={ removeTodo }>Delete</button>
+        <button
+          className='delete-button'
+          onClick={ removeTodo }>Delete</button>
       </div>
     );
   }
