@@ -5,12 +5,13 @@ import TodoForm from './todo_form';
 
 export default class TodoList extends React.Component {
   render() {
-    const { todos, receiveTodo } = this.props;
+    console.log('props',this.props);
+    const { todos, receiveTodo, removeTodo } = this.props;
     const todoItems = todos.map(todo => (
       <TodoListItem
         key={`todo-list-item${todo.id}`}
         todo={todo}
-        receiveTodo={receiveTodo}/>
+        receiveTodo={receiveTodo} />
     ));
 
     return (
