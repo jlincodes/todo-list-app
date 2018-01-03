@@ -11,7 +11,9 @@ import {allTodos} from './reducers/selectors';
 import Root from './components/root';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const store = configureStore();
+  const preloadedState = localStorage.state ?
+    JSON.parse(localStorage.state) : {};
+  const store = configureStore(preloadedState);
   const main = document.getElementById('main');
 
   // for testing
