@@ -6,21 +6,35 @@ body {
   align-content: center;
 }
 
+h1, h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .todo-form {
   width: 400px;
   padding: 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 input {
   width: 75%;
   margin-bottom: 10px;
+  height: 28px;
 }
 
 textarea {
   width: 75%;
   margin-bottom: 10px;
+}
+
+input, textarea {
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 0 5px 0 5px;
+  border: 1px solid rgb(94, 155, 255);
 }
 
 button {
