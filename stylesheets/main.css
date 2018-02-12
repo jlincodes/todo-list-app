@@ -2,13 +2,14 @@ body {
   font-family: 'Acme', sans-serif;
   display: flex;
   justify-content: space-around;
-  background-color: rgb(206, 223, 255);
   align-content: center;
+  background: linear-gradient(to top right, rgba(232, 245, 255, 1), rgba(32, 112, 173, 1));
 }
 
 h1, h2 {
   text-align: center;
   text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
 }
 
 .todo-form {
