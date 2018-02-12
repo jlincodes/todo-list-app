@@ -111,3 +111,7 @@ footer ul {
 footer li {
   margin: auto 10px;
 }
+
+footer a:hover {
+  color: black;
+}
