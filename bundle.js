@@ -24385,7 +24385,42 @@ var App = function (_React$Component) {
           null,
           'Todo List App'
         ),
-        _react2.default.createElement(_todo_list_container2.default, null)
+        _react2.default.createElement(_todo_list_container2.default, null),
+        _react2.default.createElement(
+          'footer',
+          null,
+          _react2.default.createElement(
+            'ul',
+            null,
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                'a',
+                { href: 'https://github.com/julielin0812/budget-breakdown-calculator' },
+                'Github Project Repo'
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                'a',
+                { href: 'https://www.linkedin.com/in/julielin0812/' },
+                'LinkedIn'
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                'a',
+                { href: 'http://www.julielin.me/' },
+                'Portfolio'
+              )
+            )
+          )
+        )
       );
     }
   }]);

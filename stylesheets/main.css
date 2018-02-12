@@ -4,6 +4,7 @@ body {
   justify-content: space-around;
   align-content: center;
   background: linear-gradient(to top right, rgba(232, 245, 255, 1), rgba(32, 112, 173, 1));
+  background-repeat: repeat-y;
 }
 
 h1, h2 {
@@ -94,4 +95,19 @@ ul {
 
 .undo {
   background-color: grey;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+footer li {
+  margin: auto 10px;
 }
