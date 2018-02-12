@@ -20777,14 +20777,26 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 var initialState = {
   1: {
     id: 1,
-    title: 'wash car',
-    body: 'with soap',
+    title: 'Buy groceries',
+    body: 'bread, butter, cheese, eggs, soy milk, coffee',
     done: false
   },
   2: {
     id: 2,
-    title: 'wash dog',
-    body: 'with dog shampoo',
+    title: 'Clean apartment',
+    body: 'sweep, vacuum',
+    done: true
+  },
+  3: {
+    id: 3,
+    title: 'Take out trash',
+    body: 'on Wednesday',
+    done: false
+  },
+  4: {
+    id: 4,
+    title: 'Call Mom',
+    body: 'or else...',
     done: true
   }
 };
