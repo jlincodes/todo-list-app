@@ -11,7 +11,7 @@ export default class App extends React.Component {
         <footer>
           <ul>
             <li>
-              <a href="https://github.com/julielin0812/budget-breakdown-calculator">Github Project Repo</a>
+              <a href="https://github.com/julielin0812/todo-list-app">Github Project Repo</a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/julielin0812/">LinkedIn</a>
