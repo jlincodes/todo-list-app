@@ -24409,7 +24409,7 @@ var App = function (_React$Component) {
               null,
               _react2.default.createElement(
                 'a',
-                { href: 'https://github.com/julielin0812/budget-breakdown-calculator' },
+                { href: 'https://github.com/julielin0812/todo-list-app' },
                 'Github Project Repo'
               )
             ),
